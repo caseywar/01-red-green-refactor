@@ -1,6 +1,4 @@
-const getName = (obj) => {
-  const { name } = obj;
-
+const getName = ({ name }) => {
   return name;
 };
 
