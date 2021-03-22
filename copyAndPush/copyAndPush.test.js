@@ -9,4 +9,13 @@ describe('copyAndPush testing', () => {
 
     expect(newArray).toEqual([1, 2, 3, 4]);
   });
+
+  it('returns the original array', () => {
+    const arr = [1, 2, 3];
+    const newValue = 4;
+
+    copyAndPush(arr, newValue);
+
+    expect(arr).toEqual([1, 2, 3]);
+  });
 });
