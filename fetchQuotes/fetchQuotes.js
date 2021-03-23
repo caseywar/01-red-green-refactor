@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const fetchQuotes = async () => {
-  const response = await fetch('http://futuramaapi.herokuapp.com/api/quotes');
+  const response = await fetch('http://futuramaapi.herokuapp.com/api/quotes/1');
 
   const body = await response.json();
 
